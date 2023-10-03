@@ -15,7 +15,7 @@ ALTER TABLE analytics MODIFY date DATE;
 
 
 
-**From the Hint, we need to divide the price by 1,000,000** 
+# From the Hint, we need to divide the price by 1,000,000** 
 
 
 SELECT unit_price/1000000 AS formated_price FROM analytics 
