@@ -1,17 +1,20 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-(fill in your description and goals here)
+The goal of this project is to learn how to clean data. We also learn how to transform data as csv files into tables in our postgres database. 
 
 ## Process
-### (your step 1)
-### (your step 2)
+### Download the CSV files
+### Create tables and transfer them into tables
+### Look at each table see what needs to be cleaned 
+### Clean data 
+### Answer questions 
+### Complete the rest of the projects 
 
 ## Results
 (fill in what you discovered this data could tell you and how you used the data to answer those questions)
 
 ## Challenges 
-(discuss challenges you faced in the project)
-
+The challenge of this project is that it is very hard to interpret what each column means in each table. Sometimes, we have to make assumptions about some columns.
 ## Future Goals
-(what would you do if you had more time?)
+I would clean the data more and I would do more research about each column name and what they each mean. 
