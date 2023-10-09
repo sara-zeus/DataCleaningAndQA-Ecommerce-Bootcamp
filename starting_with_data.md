@@ -53,16 +53,43 @@ Answer:
 
 
 
-Question 4: 
+Question 4: List of top 5 cities with the highest sentiment Scores. 
 
 SQL Queries:
 
+SELECT 
+    cas.corrected_city AS city, ROUND(AVG(CAST(p.sentimentscore AS NUMERIC)),2) AS average_sentiment
+FROM 
+    products AS p
+JOIN
+    cleaned_all_sessions AS cas
+ON
+    cas.productsku = p.sku 
+GROUP BY
+    cas.corrected_city
+	ORDER BY ROUND(AVG(CAST(p.sentimentscore AS NUMERIC)),2) DESC
+	LIMIT 5; 
+	
+
+
 Answer:
 
+"Atlanta"	0.70
+"Columbus"	0.70
+"San Jose"	0.65
+"Houston"	0.50
+"Austin"	0.40
 
 
-Question 5: 
+
+Question 5: Whats the average overall sentiment magnitude from all products? 
 
 SQL Queries:
 
-Answer:
+SELECT 
+    ROUND(AVG(CAST(sentimentmagnitude AS NUMERIC)),2) AS average_sentiment_magnitude 
+FROM 
+    products 
+
+
+Answer: 0.77
