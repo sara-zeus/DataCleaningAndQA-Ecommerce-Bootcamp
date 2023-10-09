@@ -7,6 +7,7 @@ Issue: Potential inaccuracies in pricing and financial analytics.
 QA Role:
 Identify and rectify NULL values.
 Ensure consistency and accuracy in financial data.
+
 2. View Creation Errors:
 
 Issue: Possible incomplete or incorrect data presentation.
