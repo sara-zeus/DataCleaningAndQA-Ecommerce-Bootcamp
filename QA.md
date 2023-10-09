@@ -7,7 +7,6 @@ Invalid Dates in 'analytics' Table: Risk of incorrect or missing date values tha
 Invalid Price Formatting in 'analytics' Table: Risk of NULL values in the 'unit_price_formatted' column, affecting price-related calculations.
 'cleaned_analytics' View Creation: Risk that the view was not created correctly, potentially leading to incomplete data.
 NULL Values in 'city' Column in 'all_sessions' Table: Risk of missing or inaccurate location data due to NULL city values.
-Unresolved 'City' Values in 'cleaned_all_sessions' View: Risk that certain city values may remain unresolved, impacting geographic analysis.
 NULL Values in 'totaltransactionrevenue' Column in 'all_sessions' Table: Risk of inaccurate revenue-based analysis due to NULL revenue values.
 NULL Values in 'transactions' Column in 'all_sessions' Table: Risk of affecting transaction-related analysis and metrics due to NULL transaction values.
 
