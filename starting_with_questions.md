@@ -6,9 +6,6 @@ Answer the following questions and provide the SQL queries used to find the answ
 
 SQL Queries:
 
-
-
-Answer:
 # For cities
 
 SELECT 
@@ -25,7 +22,6 @@ GROUP BY
 ORDER BY 
     TotalTransactionRevenues DESC 
 
-    
 
 # Countries 
 
@@ -43,6 +39,25 @@ ORDER BY
     TotalTransactionRevenues DESC 
 
 
+Answer:
+
+
+"Sunnyvale"	"United States"	6722299.92
+"Seattle"	"United States"	3580000.00
+"San Francisco"	"United States"	3126799.98
+"Chicago"	"United States"	3060000.00
+"Toronto"	"Canada"	2587200.00
+"Mountain View"	"United States"	1599700.00
+"Palo Alto"	"United States"	1510000.00
+"New York"	"United States"	1399500.00
+"Zurich"	"Switzerland"	169900.00
+
+    
+
+"United States"	20998299.90
+"Canada"	2587200.00
+"Switzerland"	169900.00
+
  
 
 # In the USA 
@@ -55,7 +70,7 @@ SQL Queries:
 
 
 
-Answer:
+
 
 SELECT 
 
@@ -71,6 +86,18 @@ GROUP BY
 ORDER BY 
     average_sold DESC 
 
+Answer:
+
+"Sunnyvale"	"United States"	45
+"San Francisco"	"United States"	13
+"Toronto"	"Canada"	8
+"Mountain View"	"United States"	7
+"New York"	"United States"	5
+"Seattle"	"United States"	3
+"Chicago"	"United States"	2
+"Palo Alto"	"United States"	1
+"Zurich"	"Switzerland"	1
+
 
     
     
@@ -83,7 +110,7 @@ SQL Queries:
 
 
 
-Answer:
+
 
 
 SELECT  cas.corrected_city AS city, cas.country, p.name AS Name
@@ -95,9 +122,9 @@ ORDER BY p.name
 
 
 
+Answer:
 
-
-
+Yes colder places waarmer clothes. 
 
 
 
@@ -142,8 +169,6 @@ SQL Queries:
 
 
 
-Answer:
-
 SELECT 
 
 	cas.corrected_city AS City,     
@@ -159,6 +184,10 @@ ORDER BY
     TotalTransactionRevenues DESC 
 
 
+
+
+Answer:
+This summary provides insights into the cities and countries that contribute the most to the total transaction revenues. It is evident that larger cities in the United States, such as Sunnyvale, Seattle, and San Francisco, are the top revenue generators, followed by other cities in the United States and Canada. 
 
 
 
