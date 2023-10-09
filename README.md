@@ -9,10 +9,10 @@ The goal of this project is to learn how to clean data. We also learn how to tra
 ### Look at each table see what needs to be cleaned 
 ### Clean data 
 ### Answer questions 
-### Complete the rest of the projects 
+### Complete the rest of the project 
 
 ## Results
-I found correlations between regions and the most popular products ordered, based on weather data. 
+I found correlations between regions and the most popular products ordered, based on weather data. Places that were cooler, warmer clothes were popular and vice versa. 
 
 ## Challenges 
 The challenge of this project is that it is very hard to interpret what each column means in each table. Sometimes, we have to make assumptions about some columns.
