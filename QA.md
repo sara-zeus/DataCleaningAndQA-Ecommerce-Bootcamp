@@ -12,7 +12,8 @@ NULL Values in 'totaltransactionrevenue' Column in 'all_sessions' Table: Risk of
 NULL Values in 'transactions' Column in 'all_sessions' Table: Risk of affecting transaction-related analysis and metrics due to NULL transaction values.
 
 QA Process:
-
+Describe your QA process and include the SQL queries used to execute it.
+ 
 Data Validation in 'analytics' Table: Check for invalid dates and NULL price formats.
 Validation of 'cleaned_analytics' View: Ensure successful creation of the 'cleaned_analytics' view.
 Data Validation in 'all_sessions' Table: Verify NULL city, revenue, and transaction values.
@@ -21,8 +22,6 @@ Summary of Data Quality Issues: Provide a summary of identified data quality pro
 Proposed Data Cleaning Actions: Recommend specific actions to address the identified data quality issues.
 
 
-QA Process:
-Describe your QA process and include the SQL queries used to execute it.
 
 
 
@@ -69,7 +68,7 @@ SELECT COUNT(*) AS cleaned_all_sessions_view_count
 FROM information_schema.views
 WHERE table_name = 'cleaned_all_sessions';
 
--- Summary of Data Quality Issues
+
 SELECT
     (SELECT COUNT(*) FROM analytics) AS total_records_in_analytics,
     (SELECT COUNT(*) FROM all_sessions) AS total_records_in_all_sessions,
