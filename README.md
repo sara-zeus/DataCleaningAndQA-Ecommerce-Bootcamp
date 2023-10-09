@@ -12,7 +12,7 @@ The goal of this project is to learn how to clean data. We also learn how to tra
 ### Complete the rest of the projects 
 
 ## Results
-(fill in what you discovered this data could tell you and how you used the data to answer those questions)
+I found correlations between regions and the most popular products ordered, based on weather data. 
 
 ## Challenges 
 The challenge of this project is that it is very hard to interpret what each column means in each table. Sometimes, we have to make assumptions about some columns.
