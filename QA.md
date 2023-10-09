@@ -112,6 +112,4 @@ FROM (
     WHERE transactions IS NULL
 ) AS null_transactions_issue;
 
--- Proposed Data Cleaning Actions
--- You can add your data cleaning actions here based on the issues identified above.
 
