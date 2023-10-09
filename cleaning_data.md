@@ -61,11 +61,17 @@ WHERE corrected_city IS NOT NULL;
 SELECT totaltransactionrevenue FROM all_sessions WHERE totaltransactionrevenue IS NOT NULL; 
 
 
-# Transactions where NOT NULL 
+# Filtering out NULL Transactions 
 
 SELECT transactions FROM all_sessions WHERE transactions IS NOT NULL; 
 
+# Filtering out Null revenues 
+SELECT COUNT(*) AS null_revenue_count
+    FROM all_sessions
+    WHERE totaltransactionrevenue IS NULL 
+
 # Virtual Table: 
+
 CREATE VIEW cleaned_all_sessions AS 
 SELECT 
     *,
@@ -77,9 +83,11 @@ FROM all_sessions
 WHERE 
     (city IS NOT NULL AND city NOT IN ('not available in demo dataset', '(not set)')) 
     AND totaltransactionrevenue IS NOT NULL 
-    AND transactions IS NOT NULL;
+    AND transactions IS NOT NULL;  
 
-
+SELECT COUNT(*) AS null_revenue_count
+FROM all_sessions
+WHERE totaltransactionrevenue IS NULL;
 
 
 
