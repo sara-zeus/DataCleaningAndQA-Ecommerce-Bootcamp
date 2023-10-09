@@ -5,7 +5,7 @@ Queries:
 Below, provide the SQL queries you used to clean your data.
 
 #analytics
-# The date column's type was initially as an INT instead of date time. I made permanent changes to this type issue 
+# The date column's type was initially  an INT instead of datetime. I made permanent changes to this type issue 
 
 
 
