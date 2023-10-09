@@ -13,25 +13,19 @@ NONE!
 
 
 
-Question 2: Calculating conversion rate by product: 
+Question 2: Calculating the highest conversion rate by product: 
 
 SQL Queries:
 
-  SELECT 
-    cas.corrected_city AS city, 
-    (SUM(CAST(pp.orderedquantity AS INT)) / NULLIF(COUNT(DISTINCT cas.fullvisitorid), 0)) * 100 AS conversion_rate
-FROM 
-    products pp
-JOIN 
-    cleaned_all_sessions cas ON cas.productsku = pp.sku
-GROUP BY 
-    cas.corrected_city
-ORDER BY 
-    conversion_rate DESC, cas.corrected_city DESC;
+
+SELECT cas.corrected_city AS city, (SUM(CAST(pp.orderedquantity AS INT)) / NULLIF(COUNT(DISTINCT cas.fullvisitorid), 0))  AS conversion_rate FROM products pp JOIN cleaned_all_sessions cas ON cas.productsku = pp.sku GROUP BY cas.corrected_city
+ORDER BY conversion_rate DESC, cas.corrected_city DESC 
+LIMIT 1; 
 
 
 Answer:
 
+"Sydney"	2139 
 
 
 
