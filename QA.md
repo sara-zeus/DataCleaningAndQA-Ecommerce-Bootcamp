@@ -88,7 +88,7 @@ FROM (
 ) AS date_issue,
 (
     SELECT COUNT(*) AS invalid_price_format_count
-    FROM analytics
+    FROM cleaned_analytics
     WHERE unit_price_formatted IS NULL
 ) AS price_format_issue,
 (
