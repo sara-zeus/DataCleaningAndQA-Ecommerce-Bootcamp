@@ -1,14 +1,38 @@
 What are your risk areas? Identify and describe them.
 
 
-Risk Areas:
+1. NULL Values in 'unit_price':
 
-Invalid Dates in 'analytics' Table: Risk of incorrect or missing date values that may impact date-based analysis.
-Invalid Price Formatting in 'analytics' Table: Risk of NULL values in the 'unit_price_formatted' column, affecting price-related calculations.
-'cleaned_analytics' View Creation: Risk that the view was not created correctly, potentially leading to incomplete data.
-NULL Values in 'city' Column in 'all_sessions' Table: Risk of missing or inaccurate location data due to NULL city values.
-NULL Values in 'totaltransactionrevenue' Column in 'all_sessions' Table: Risk of inaccurate revenue-based analysis due to NULL revenue values.
-NULL Values in 'transactions' Column in 'all_sessions' Table: Risk of affecting transaction-related analysis and metrics due to NULL transaction values.
+Issue: Potential inaccuracies in pricing and financial analytics.
+QA Role:
+Identify and rectify NULL values.
+Ensure consistency and accuracy in financial data.
+2. View Creation Errors:
+
+Issue: Possible incomplete or incorrect data presentation.
+QA Role:
+Verify the correctness of view creation.
+Validate completeness and integrity of displayed data.
+Slide 3: Location Data Accuracy
+3. Inaccurate City Values:
+
+Issue: Misrepresentation of location-based data and insights.
+QA Role:
+Validate accuracy of location data.
+Ensure geospatial analytics are based on correct data.
+Slide 4: Revenue and Transaction Data Integrity
+4. NULL Revenue Values:
+
+Issue: Impaired revenue analysis and forecasting.
+QA Role:
+Detect and amend NULL values in revenue data.
+Guarantee accurate revenue reporting and insights.
+5. NULL Transaction Values:
+
+Issue: Compromised transactional analytics and insights.
+QA Role:
+Identify and correct NULL transaction values.
+Ensure transaction data integrity for accurate analysis.
 
 QA Process:
 Describe your QA process and include the SQL queries used to execute it.
