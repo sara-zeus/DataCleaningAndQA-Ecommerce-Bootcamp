@@ -94,16 +94,17 @@ average_sold DESC
 
 Answer:
 
-"Sunnyvale"	"United States"	45
-"San Francisco"	"United States"	13
-"Toronto"	"Canada"	8
-"Mountain View"	"United States"	7
-"New York"	"United States"	5
-"Seattle"	"United States"	3
-"Chicago"	"United States"	2
-"Palo Alto"	"United States"	1
-"Zurich"	"Switzerland"	1
-
+| City           | Country        | Units Sold |
+|----------------|----------------|------------|
+| Sunnyvale      | United States  | 45         |
+| San Francisco  | United States  | 13         |
+| Toronto        | Canada         | 8          |
+| Mountain View  | United States  | 7          |
+| New York       | United States  | 5          |
+| Seattle        | United States  | 3          |
+| Chicago        | United States  | 2          |
+| Palo Alto      | United States  | 1          |
+| Zurich         | Switzerland    | 1          |
 
     
     
