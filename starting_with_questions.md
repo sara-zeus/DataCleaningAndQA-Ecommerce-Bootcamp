@@ -91,7 +91,7 @@ average_sold DESC
 ```
 
 
-# Output: 
+__Output__: 
 
 | City           | Country        | Units Sold |
 |----------------|----------------|------------|
@@ -137,7 +137,7 @@ p.name
 
 
 # **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?** 
-# Output: 
+__Output__ : 
 # In the colder cities like SF, I see lots of orders like Hoodies and Neck Tee, but in LA, a hotter place, short sleeves and shors 
 
 ```sql
