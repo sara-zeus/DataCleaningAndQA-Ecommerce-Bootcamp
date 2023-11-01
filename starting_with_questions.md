@@ -25,8 +25,7 @@ TotalTransactionRevenues DESC
 
 # Countries 
 
-''' SELECT 
-    
+SELECT 
     cas.country AS Country, 
     SUM(ca.formatted_revenue) AS TotalTransactionRevenues
 FROM 
@@ -37,7 +36,7 @@ GROUP BY
     cas.country
 ORDER BY 
     TotalTransactionRevenues DESC 
-    '''
+
 
 
 Answer:
