@@ -4,8 +4,7 @@ Answer the following questions and provide the SQL queries used to find the answ
  # **Question 1: Which cities and countries have the highest level of transaction revenues on the site?**
 
 
-
-# For cities
+__For cities__ 
 
 ```sql
 SELECT
@@ -23,7 +22,7 @@ TotalTransactionRevenues DESC
 ```
 
 
-# Countries 
+__Countries__
 
 ```sql
 SELECT
