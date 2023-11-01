@@ -164,7 +164,7 @@ ON cas.productSKU = p.SKU
 GROUP BY p.name, cas.corrected_city, cas.country
 HAVING cas.corrected_city IN ('Zurich')
 ORDER BY p.name
-'''
+```
 
 # Here we can see in Swizeerland, a colder place the order ia :  Men's 3/4 Sleeve Henley 
 # In LA:   Women's Short Sleeve Hero Tee White 
