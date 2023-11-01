@@ -170,19 +170,19 @@ ORDER BY p.name
 
 
 ```sql
-SELECT 
-
-	cas.corrected_city AS City,     
-	cas.country AS Country, 
+SELECT
+    cas.corrected_city AS City,
+    cas.country AS Country,
     SUM(ca.formatted_revenue) AS TotalTransactionRevenues
-FROM 
+FROM
     cleaned_all_sessions AS cas
-JOIN 
-    cleaned_analytics AS ca ON ca.fullvisitorId = cas.fullVisitorId 
-GROUP BY 
-    cas.country, cas.corrected_city 
-ORDER BY 
+JOIN
+    cleaned_analytics AS ca ON ca.fullvisitorId = cas.fullVisitorId
+GROUP BY
+    cas.country, cas.corrected_city
+ORDER BY
     TotalTransactionRevenues DESC
+
 ```
 
 
