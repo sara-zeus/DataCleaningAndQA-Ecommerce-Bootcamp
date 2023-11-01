@@ -4,7 +4,6 @@ Answer the following questions and provide the SQL queries used to find the answ
  # **Question 1: Which cities and countries have the highest level of transaction revenues on the site?**
 
 
-SQL Queries:
 
 # For cities
 
@@ -41,7 +40,7 @@ TotalTransactionRevenues DESC
 ```
 
 
-Answer:
+# Output 
 
 
 | City           | Country        | TotalTransactionRevenues |
@@ -71,7 +70,7 @@ Answer:
 # **Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
-SQL Queries:
+
 
 
 
@@ -92,7 +91,7 @@ average_sold DESC
 ```
 
 
-Answer:
+# Output 
 
 | City           | Country        | Units Sold |
 |----------------|----------------|------------|
@@ -111,9 +110,6 @@ Answer:
 
 
 # **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
-
-
-SQL Queries:
 
 
 
@@ -137,10 +133,7 @@ p.name
 
 
 
-
-Answer:
-
-The query results reveal insights into the top-selling products in various cities and highlight a pattern in consumer preferences that is influenced by geographical and climatic factors. The selected cities in the United States and Switzerland exhibit distinct consumer behavior, showcasing a tangible connection between the local climate and the type of products purchased.
+# The query results reveal insights into the top-selling products in various cities and highlight a pattern in consumer preferences that is influenced by geographical and climatic factors. The selected cities in the United States and Switzerland exhibit distinct consumer behavior, showcasing a tangible connection between the local climate and the type of products purchased.
 
 
 # **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
@@ -150,7 +143,7 @@ SQL Queries:
 
 
 
-Answer:
+# Output 
 
 
 
@@ -183,7 +176,7 @@ ORDER BY p.name
 
 # **Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
-SQL Queries:
+
 
 
 ```sql
