@@ -35,15 +35,15 @@ QA Role:
 Identify and correct NULL transaction values.
 Ensure transaction data integrity for accurate analysis.
 
-__QA Process:__
-Describe your QA process and include the SQL queries used to execute it.
+# QA Process 
+__Describe your QA process and include the SQL queries used to execute it.__  
  
-__Data Validation in 'analytics' Table: Check for invalid dates and NULL price formats.
-Validation of 'cleaned_analytics' View: Ensure successful creation of the 'cleaned_analytics' view.
-Data Validation in 'all_sessions' Table: Verify NULL city, revenue, and transaction values.
-Validation of 'cleaned_all_sessions' View: Confirm successful creation of the 'cleaned_all_sessions' view.
-Summary of Data Quality Issues: Provide a summary of identified data quality problems.
-Proposed Data Cleaning Actions: Recommend specific actions to address the identified data quality issues.__
+1. Data Validation in 'analytics' Table: Check for invalid dates and NULL price formats.
+2. Validation of 'cleaned_analytics' View: Ensure successful creation of the 'cleaned_analytics' view.
+3. Data Validation in 'all_sessions' Table: Verify NULL city, revenue, and transaction values.
+4. Validation of 'cleaned_all_sessions' View: Confirm successful creation of the 'cleaned_all_sessions' view.
+5. Summary of Data Quality Issues: Provide a summary of identified data quality problems.
+6. Proposed Data Cleaning Actions: Recommend specific actions to address the identified data quality issues.
 
 
 
