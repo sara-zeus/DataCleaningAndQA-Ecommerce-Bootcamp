@@ -177,8 +177,7 @@ JOIN products AS p
 ON cas.productSKU = p.SKU
 GROUP BY p.name, cas.corrected_city, cas.country
 HAVING cas.corrected_city IN ('LA')
-ORDER BY p.name 
-
+ORDER BY p.name
 ```
 
 
