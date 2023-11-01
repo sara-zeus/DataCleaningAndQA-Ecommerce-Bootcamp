@@ -118,23 +118,22 @@ SQL Queries:
 
 
 
-
-'''
+```sql
 SELECT
-    cas.corrected_city AS city,
-    cas.country,
-    p.name AS Name
+cas.corrected_city AS city,
+cas.country,
+p.name AS Name
 FROM
-    cleaned_all_sessions AS cas
+cleaned_all_sessions AS cas
 JOIN
-    products AS p
+products AS p
 ON
-    cas.productSKU = p.SKU
+cas.productSKU = p.SKU
 GROUP BY
-    p.name, cas.corrected_city, cas.country
+p.name, cas.corrected_city, cas.country
 ORDER BY
-    p.name
-'''
+p.name
+``` 
 
 
 
@@ -157,13 +156,15 @@ Answer:
 
 # In the colder cities like SF, I see lots of orders like Hoodies and Neck Tee, but in LA, a hotter place, short sleeves and shors 
 
+```sql
 SELECT  cas.corrected_city AS city, cas.country, p.name AS Name
 FROM cleaned_all_sessions AS cas 
 JOIN products AS p 
 ON cas.productSKU = p.SKU
 GROUP BY p.name, cas.corrected_city, cas.country
 HAVING cas.corrected_city IN ('Zurich')
-ORDER BY p.name  
+ORDER BY p.name
+'''
 
 # Here we can see in Swizeerland, a colder place the order ia :  Men's 3/4 Sleeve Henley 
 # In LA:   Women's Short Sleeve Hero Tee White 
