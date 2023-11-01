@@ -1,7 +1,7 @@
 
 __Below, provide the SQL queries you used to clean your data.__ 
 
-__analytics__
+
 __The date column's type was initially  an INT instead of datetime. I made permanent changes to this type issue__ 
 
 ```sql 
