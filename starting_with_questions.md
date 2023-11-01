@@ -206,7 +206,7 @@ ORDER BY
 
 
 Answer:
-This summary provides insights into the cities and countries that contribute the most to the total transaction revenues. It is evident that larger cities in the United States, such as Sunnyvale, Seattle, and San Francisco, are the top revenue generators, followed by other cities in the United States and Canada. 
+*** This summary provides insights into the cities and countries that contribute the most to the total transaction revenues. It is evident that larger cities in the United States, such as Sunnyvale, Seattle, and San Francisco, are the top revenue generators, followed by other cities in the United States and Canada. ***
 
 
 
