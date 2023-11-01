@@ -1,39 +1,39 @@
-What are your risk areas? Identify and describe them.
+### What are your risk areas? Identify and describe them.
 
+1. **NULL Values in 'unit_price':**
+   - **Issue:** Potential inaccuracies in pricing and financial analytics.
+   - **QA Role:**
+     - Identify and rectify NULL values.
+     - Ensure consistency and accuracy in financial data.
 
-1. NULL Values in 'unit_price':
+2. **View Creation Errors:**
+   - **Issue:** Possible incomplete or incorrect data presentation.
+   - **QA Role:**
+     - Verify the correctness of view creation.
+     - Validate completeness and integrity of displayed data.
 
-Issue: Potential inaccuracies in pricing and financial analytics.
-QA Role:
-Identify and rectify NULL values.
-Ensure consistency and accuracy in financial data.
+### Slide 3: Location Data Accuracy
 
-2. View Creation Errors:
+3. **Inaccurate City Values:**
+   - **Issue:** Misrepresentation of location-based data and insights.
+   - **QA Role:**
+     - Validate accuracy of location data.
+     - Ensure geospatial analytics are based on correct data.
 
-Issue: Possible incomplete or incorrect data presentation.
-QA Role:
-Verify the correctness of view creation.
-Validate completeness and integrity of displayed data.
-Slide 3: Location Data Accuracy
-3. Inaccurate City Values:
+### Slide 4: Revenue and Transaction Data Integrity
 
-Issue: Misrepresentation of location-based data and insights.
-QA Role:
-Validate accuracy of location data.
-Ensure geospatial analytics are based on correct data.
-Slide 4: Revenue and Transaction Data Integrity
-4. NULL Revenue Values:
+4. **NULL Revenue Values:**
+   - **Issue:** Impaired revenue analysis and forecasting.
+   - **QA Role:**
+     - Detect and amend NULL values in revenue data.
+     - Guarantee accurate revenue reporting and insights.
 
-Issue: Impaired revenue analysis and forecasting.
-QA Role:
-Detect and amend NULL values in revenue data.
-Guarantee accurate revenue reporting and insights.
-5. NULL Transaction Values:
-
-Issue: Compromised transactional analytics and insights.
-QA Role:
-Identify and correct NULL transaction values.
-Ensure transaction data integrity for accurate analysis.
+5. **NULL Transaction Values:**
+   - **Issue:** Compromised transactional analytics and insights.
+   - **QA Role:**
+     - Identify and correct NULL transaction values.
+     - Ensure transaction data integrity for accurate analysis.
+ 
 
 # QA Process 
 __Describe your QA process and include the SQL queries used to execute it.__  
