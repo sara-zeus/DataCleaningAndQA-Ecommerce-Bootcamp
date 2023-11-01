@@ -1,7 +1,7 @@
 Answer the following questions and provide the SQL queries used to find the answer.
 
     
- # **Question 1: Which cities and countries have the highest level of transaction revenues on the site?**
+__Question 1: Which cities and countries have the highest level of transaction revenues on the site?__
 
 
 __For cities__ 
@@ -39,7 +39,7 @@ TotalTransactionRevenues DESC
 ```
 
 
-# Output: 
+__Outpu:__ 
 
 
 | City           | Country        | TotalTransactionRevenues |
@@ -64,9 +64,7 @@ TotalTransactionRevenues DESC
  
 
 __ANS: In the USA__ 
-
-
-# **Question 2: What is the average number of products ordered from visitors in each city and country?**
+__Question 2: What is the average number of products ordered from visitors in each city and country?__
 
 
 
@@ -90,7 +88,7 @@ average_sold DESC
 ```
 
 
-# Output: 
+__Output:__
 
 | City           | Country        | Units Sold |
 |----------------|----------------|------------|
@@ -108,7 +106,7 @@ average_sold DESC
     
 
 
-# **Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?**
+__Question 3: Is there any pattern in the types (product categories) of products ordered from visitors in each city and country?__
 
 
 
@@ -135,7 +133,7 @@ p.name
 __The query results reveal insights into the top-selling products in various cities and highlight a pattern in consumer preferences that is influenced by geographical and climatic factors. The selected cities in the United States and Switzerland exhibit distinct consumer behavior, showcasing a tangible connection between the local climate and the type of products purchased.__
 
 
-# **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?** 
+__Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?__
 # Output : 
 __In the colder cities like SF, I see lots of orders like Hoodies and Neck Tee, but in LA, a hotter place, short sleeves and shor__ 
 
@@ -163,7 +161,7 @@ ORDER BY p.name
 ```
 
 
-# **Question 5: Can we summarize the impact of revenue generated from each city/country?**
+__Question 5: Can we summarize the impact of revenue generated from each city/country?__ 
 
 
 
