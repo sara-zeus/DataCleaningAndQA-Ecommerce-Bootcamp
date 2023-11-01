@@ -76,21 +76,20 @@ SQL Queries:
 
 
 
-
-'''
-SELECT 
-cas.corrected_city AS City,     
-cas.country AS Country, 
+```sql
+SELECT
+cas.corrected_city AS City,
+cas.country AS Country,
 SUM(CAST(ca.units_sold AS INT)) AS average_sold
-FROM 
+FROM
 cleaned_all_sessions AS cas
-JOIN 
-cleaned_analytics AS ca ON ca.fullvisitorId = cas.fullVisitorId 
-GROUP BY 
-cas.country, cas.corrected_city 
-ORDER BY 
+JOIN
+cleaned_analytics AS ca ON ca.fullvisitorId = cas.fullVisitorId
+GROUP BY
+cas.country, cas.corrected_city
+ORDER BY
 average_sold DESC
-'''
+```
 
 
 Answer:
