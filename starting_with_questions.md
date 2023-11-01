@@ -119,13 +119,23 @@ SQL Queries:
 
 
 
+'''
+SELECT
+    cas.corrected_city AS city,
+    cas.country,
+    p.name AS Name
+FROM
+    cleaned_all_sessions AS cas
+JOIN
+    products AS p
+ON
+    cas.productSKU = p.SKU
+GROUP BY
+    p.name, cas.corrected_city, cas.country
+ORDER BY
+    p.name
+'''
 
-SELECT  cas.corrected_city AS city, cas.country, p.name AS Name
-FROM cleaned_all_sessions AS cas 
-JOIN products AS p 
-ON cas.productSKU = p.SKU
-GROUP BY p.name, cas.corrected_city, cas.country
-ORDER BY p.name 
 
 
 
