@@ -92,6 +92,7 @@ SELECT COUNT(*) AS cleaned_all_sessions_view_count
 FROM information_schema.views
 WHERE table_name = 'cleaned_all_sessions';
 
+```sql 
 
 SELECT
     (SELECT COUNT(*) FROM analytics) AS total_records_in_analytics,
@@ -135,4 +136,5 @@ FROM (
     WHERE transactions IS NULL
 ) AS null_transactions_issue;
 
-
+```
+  
