@@ -133,12 +133,12 @@ p.name
 
 
 
-# The query results reveal insights into the top-selling products in various cities and highlight a pattern in consumer preferences that is influenced by geographical and climatic factors. The selected cities in the United States and Switzerland exhibit distinct consumer behavior, showcasing a tangible connection between the local climate and the type of products purchased.
+__The query results reveal insights into the top-selling products in various cities and highlight a pattern in consumer preferences that is influenced by geographical and climatic factors. The selected cities in the United States and Switzerland exhibit distinct consumer behavior, showcasing a tangible connection between the local climate and the type of products purchased.__
 
 
 # **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?** 
 __Output__ : 
-# In the colder cities like SF, I see lots of orders like Hoodies and Neck Tee, but in LA, a hotter place, short sleeves and shors 
+__In the colder cities like SF, I see lots of orders like Hoodies and Neck Tee, but in LA, a hotter place, short sleeves and shor__ 
 
 ```sql
 SELECT  cas.corrected_city AS city, cas.country, p.name AS Name
@@ -149,9 +149,8 @@ GROUP BY p.name, cas.corrected_city, cas.country
 HAVING cas.corrected_city IN ('Zurich')
 ORDER BY p.name
 ```
-
-# Here we can see in Swizeerland, a colder place the order ia :  Men's 3/4 Sleeve Henley 
-# In LA:   Women's Short Sleeve Hero Tee White 
+__Here we can see in Swizeerland, a colder place the order ia :  Men's 3/4 Sleeve Henley__ 
+__In LA:   Women's Short Sleeve Hero Tee White__ 
 
 
 ```sql
