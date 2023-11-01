@@ -68,7 +68,7 @@ Answer:
 # In the USA 
 
 
-#**Question 2: What is the average number of products ordered from visitors in each city and country?**
+# **Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
 SQL Queries:
@@ -143,7 +143,7 @@ Answer:
 The query results reveal insights into the top-selling products in various cities and highlight a pattern in consumer preferences that is influenced by geographical and climatic factors. The selected cities in the United States and Switzerland exhibit distinct consumer behavior, showcasing a tangible connection between the local climate and the type of products purchased.
 
 
-**Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
+# **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
 
 
 SQL Queries:
@@ -181,7 +181,7 @@ ORDER BY p.name
 ```
 
 
-**Question 5: Can we summarize the impact of revenue generated from each city/country?**
+# **Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
 SQL Queries:
 
