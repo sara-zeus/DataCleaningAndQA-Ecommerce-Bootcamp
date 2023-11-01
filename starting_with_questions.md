@@ -25,7 +25,7 @@ TotalTransactionRevenues DESC
 
 # Countries 
 
-SELECT 
+''' SELECT 
     
     cas.country AS Country, 
     SUM(ca.formatted_revenue) AS TotalTransactionRevenues
@@ -37,6 +37,7 @@ GROUP BY
     cas.country
 ORDER BY 
     TotalTransactionRevenues DESC 
+    '''
 
 
 Answer:
