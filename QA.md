@@ -52,45 +52,45 @@ Proposed Data Cleaning Actions: Recommend specific actions to address the identi
 
 __Data Quality Assurance Query__ 
 
-# Check if the 'analytics' table has been updated correctly to date type
+ __Check if the 'analytics' table has been updated correctly to date type
 SELECT COUNT(*) AS invalid_date_count
 FROM analytics
-WHERE DATE(date) IS NULL;
+WHERE DATE(date) IS NULL;__ 
 
-# Check if the unit_price formatting has been applied correctly
+__Check if the unit_price formatting has been applied correctly
 SELECT COUNT(*) AS invalid_price_format_count
 FROM analytics
-WHERE unit_price_formatted IS NULL;
+WHERE unit_price_formatted IS NULL;__ 
 
-# Check if the 'cleaned_analytics' view has been created correctly
+__Check if the 'cleaned_analytics' view has been created correctly
 SELECT COUNT(*) AS cleaned_analytics_view_count
 FROM information_schema.views
-WHERE table_name = 'cleaned_analytics';
+WHERE table_name = 'cleaned_analytics';__
 
-# Check for NULL values in 'all_sessions' city column
+__Check for NULL values in 'all_sessions' city column
 SELECT COUNT(*) AS null_city_count
 FROM all_sessions
-WHERE city IS NULL;
+WHERE city IS NULL;__ 
 
-# Check if 'not available in demo dataset' or '(not set)' values in city column have been corrected in 'cleaned_all_sessions' view
+__Check if 'not available in demo dataset' or '(not set)' values in city column have been corrected in 'cleaned_all_sessions' view
 SELECT COUNT(*) AS corrected_city_count
 FROM cleaned_all_sessions
-WHERE corrected_city IN ('not available in demo dataset', '(not set)');
+WHERE corrected_city IN ('not available in demo dataset', '(not set)');__
 
-# Check for NULL values in 'totaltransactionrevenue' column in 'all_sessions'
+__Check for NULL values in 'totaltransactionrevenue' column in 'all_sessions'
 SELECT COUNT(*) AS null_revenue_count
 FROM all_sessions
-WHERE totaltransactionrevenue IS NULL;
+WHERE totaltransactionrevenue IS NULL;__ 
 
-# Check for NULL values in 'transactions' column in 'all_sessions'
+__Check for NULL values in 'transactions' column in 'all_sessions'
 SELECT COUNT(*) AS null_transactions_count
 FROM all_sessions
-WHERE transactions IS NULL;
+WHERE transactions IS NULL;__
 
-# Check if the 'cleaned_all_sessions' view has been created correctly
+__Check if the 'cleaned_all_sessions' view has been created correctly
 SELECT COUNT(*) AS cleaned_all_sessions_view_count
 FROM information_schema.views
-WHERE table_name = 'cleaned_all_sessions';
+WHERE table_name = 'cleaned_all_sessions';__ 
 
 ```sql 
 
