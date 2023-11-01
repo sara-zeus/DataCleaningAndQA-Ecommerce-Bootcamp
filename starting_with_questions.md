@@ -7,6 +7,7 @@ Answer the following questions and provide the SQL queries used to find the answ
 SQL Queries:
 
 # For cities
+
 ```sql
 SELECT
 cas.corrected_city AS City,
@@ -25,38 +26,42 @@ TotalTransactionRevenues DESC
 
 # Countries 
 
-SELECT 
-    cas.country AS Country, 
-    SUM(ca.formatted_revenue) AS TotalTransactionRevenues
-FROM 
-    cleaned_all_sessions AS cas
-JOIN 
-    cleaned_analytics AS ca ON ca.fullvisitorId = cas.fullVisitorId 
-GROUP BY 
-    cas.country
-ORDER BY 
-    TotalTransactionRevenues DESC 
-
+```sql
+SELECT
+cas.country AS Country,
+SUM(ca.formatted_revenue) AS TotalTransactionRevenues
+FROM
+cleaned_all_sessions AS cas
+JOIN
+cleaned_analytics AS ca ON ca.fullvisitorId = cas.fullVisitorId
+GROUP BY
+cas.country
+ORDER BY
+TotalTransactionRevenues DESC
+```
 
 
 Answer:
 
 
-"Sunnyvale"	"United States"	6722299.92
-"Seattle"	"United States"	3580000.00
-"San Francisco"	"United States"	3126799.98
-"Chicago"	"United States"	3060000.00
-"Toronto"	"Canada"	2587200.00
-"Mountain View"	"United States"	1599700.00
-"Palo Alto"	"United States"	1510000.00
-"New York"	"United States"	1399500.00
-"Zurich"	"Switzerland"	169900.00
+| City           | Country        | TotalTransactionRevenues |
+|----------------|----------------|---------------------------|
+| Sunnyvale      | United States  | 6,722,299.92              |
+| Seattle        | United States  | 3,580,000.00              |
+| San Francisco  | United States  | 3,126,799.98              |
+| Chicago        | United States  | 3,060,000.00              |
+| Toronto        | Canada         | 2,587,200.00              |
+| Mountain View  | United States  | 1,599,700.00              |
+| Palo Alto      | United States  | 1,510,000.00              |
+| New York       | United States  | 1,399,500.00              |
+| Zurich         | Switzerland    | 169,900.00                |
 
-    
+| Country        | TotalTransactionRevenues |
+|----------------|---------------------------|
+| United States  | 20,998,299.90             |
+| Canada         | 2,587,200.00              |
+| Switzerland    | 169,900.00                |
 
-"United States"	20998299.90
-"Canada"	2587200.00
-"Switzerland"	169900.00
 
  
 
