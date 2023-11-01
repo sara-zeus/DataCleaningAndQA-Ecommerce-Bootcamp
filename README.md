@@ -1,21 +1,27 @@
-# Final-Project-Transforming-and-Analyzing-Data-with-SQL: 
+# Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
-## Project/Goals
-The goal of this project is to learn how to clean data. We also learn how to transform data as csv files into tables in our postgres database. 
+## Project Goals
 
+The goal of this project is to learn how to clean data and transform CSV files into tables in our PostgreSQL database.
+
+### Project Steps
 1. Process
 2. Download the CSV files
-3. Create tables and transfer them into tables
-4. Look at each table, see what needs to be cleaned
-5. Clean data
-6. Answer questions
-7. Complete the rest of the project
+3. Create tables and transfer data into them
+4. Examine each table to identify necessary cleaning
+5. Perform data cleaning
+6. Analyze and answer questions
+7. Complete the remaining tasks of the project
 
+## Results
 
-__Results__
-I found correlations between regions and the most popular products ordered, based on weather data. Places that were cooler, warmer clothes were popular and vice versa. 
+I discovered correlations between regions and the popularity of products ordered, based on weather data. Cooler places favored warmer clothes, and vice versa.
 
-__Challenges__ 
-The challenge of this project is that it is very hard to interpret what each column means in each table. Sometimes, we have to make assumptions about some columns.
-__Future Goals__
-I would clean the data more and I would do more research about each column name and what they each mean. 
+## Challenges
+
+The main challenge in this project is the difficulty in interpreting the meaning of each column in the tables. In some cases, assumptions had to be made about certain columns.
+
+## Future Goals
+
+In the future, I plan to further clean the data and conduct more research to understand the meaning of each column.
+ 
