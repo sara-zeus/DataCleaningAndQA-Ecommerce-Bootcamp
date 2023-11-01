@@ -40,7 +40,7 @@ TotalTransactionRevenues DESC
 ```
 
 
-__Output__ : 
+# Output: 
 
 
 | City           | Country        | TotalTransactionRevenues |
@@ -91,7 +91,7 @@ average_sold DESC
 ```
 
 
-__Output__: 
+# Output: 
 
 | City           | Country        | Units Sold |
 |----------------|----------------|------------|
@@ -137,7 +137,7 @@ __The query results reveal insights into the top-selling products in various cit
 
 
 # **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?** 
-__Output__ : 
+# Output : 
 __In the colder cities like SF, I see lots of orders like Hoodies and Neck Tee, but in LA, a hotter place, short sleeves and shor__ 
 
 ```sql
