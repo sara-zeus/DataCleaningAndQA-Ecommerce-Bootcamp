@@ -50,7 +50,7 @@ Proposed Data Cleaning Actions: Recommend specific actions to address the identi
 
 
 
-__Data Quality Assurance Query__ 
+# Data Quality Assurance Query 
 
  __Check if the 'analytics' table has been updated correctly to date type
 SELECT COUNT(*) AS invalid_date_count
