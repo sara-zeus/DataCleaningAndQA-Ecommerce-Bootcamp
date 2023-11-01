@@ -77,11 +77,11 @@ SQL Queries:
 
 
 
+'''
 SELECT 
-
-	cas.corrected_city AS City,     
-	cas.country AS Country, 
-SUM(CAST(ca.units_sold AS INT)) AS average_sold
+    cas.corrected_city AS City,     
+    cas.country AS Country, 
+    SUM(CAST(ca.units_sold AS INT)) AS average_sold
 FROM 
     cleaned_all_sessions AS cas
 JOIN 
@@ -89,7 +89,9 @@ JOIN
 GROUP BY 
     cas.country, cas.corrected_city 
 ORDER BY 
-    average_sold DESC 
+    average_sold DESC
+'''
+
 
 Answer:
 
