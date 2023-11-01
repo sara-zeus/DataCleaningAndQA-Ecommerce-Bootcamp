@@ -7,20 +7,20 @@ Answer the following questions and provide the SQL queries used to find the answ
 SQL Queries:
 
 # For cities
-
-SELECT 
-
-	cas.corrected_city AS City,     
-	cas.country AS Country, 
-    SUM(ca.formatted_revenue) AS TotalTransactionRevenues
-FROM 
-    cleaned_all_sessions AS cas
-JOIN 
-    cleaned_analytics AS ca ON ca.fullvisitorId = cas.fullVisitorId 
-GROUP BY 
-    cas.country, cas.corrected_city 
-ORDER BY 
-    TotalTransactionRevenues DESC 
+```sql
+SELECT
+cas.corrected_city AS City,
+cas.country AS Country,
+SUM(ca.formatted_revenue) AS TotalTransactionRevenues
+FROM
+cleaned_all_sessions AS cas
+JOIN
+cleaned_analytics AS ca ON ca.fullvisitorId = cas.fullVisitorId
+GROUP BY
+cas.country, cas.corrected_city
+ORDER BY
+TotalTransactionRevenues DESC
+```
 
 
 # Countries 
