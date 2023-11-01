@@ -68,7 +68,7 @@ Answer:
 # In the USA 
 
 
-# **Question 2: What is the average number of products ordered from visitors in each city and country?**
+#**Question 2: What is the average number of products ordered from visitors in each city and country?**
 
 
 SQL Queries:
