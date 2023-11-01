@@ -40,7 +40,7 @@ TotalTransactionRevenues DESC
 ```
 
 
-# Output: 
+__ Output __ : 
 
 
 | City           | Country        | TotalTransactionRevenues |
