@@ -64,7 +64,7 @@ TotalTransactionRevenues DESC
 
  
 
-# In the USA 
+__ANS: In the USA__ 
 
 
 # **Question 2: What is the average number of products ordered from visitors in each city and country?**
