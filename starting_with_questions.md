@@ -202,7 +202,7 @@ GROUP BY
     cas.country, cas.corrected_city 
 ORDER BY 
     TotalTransactionRevenues DESC
-'''
+```
 
 
 
