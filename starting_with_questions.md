@@ -136,17 +136,8 @@ p.name
 # The query results reveal insights into the top-selling products in various cities and highlight a pattern in consumer preferences that is influenced by geographical and climatic factors. The selected cities in the United States and Switzerland exhibit distinct consumer behavior, showcasing a tangible connection between the local climate and the type of products purchased.
 
 
-# **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
-
-
-SQL Queries:
-
-
-
+# **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?** 
 # Output 
-
-
-
 # In the colder cities like SF, I see lots of orders like Hoodies and Neck Tee, but in LA, a hotter place, short sleeves and shors 
 
 ```sql
