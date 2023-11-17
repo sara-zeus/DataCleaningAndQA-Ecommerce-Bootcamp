@@ -20,7 +20,3 @@ Through meticulous analysis, I uncovered compelling correlations between geograp
 ## Challenges
 
 The most significant challenge encountered was the complexity associated with interpreting the meanings embedded within each table column. In several instances, assumptions were necessary to navigate certain columns' content.
-
-## Future Goals
-
-My future endeavors involve an enhanced data refinement process, coupled with extensive research efforts aimed at unraveling the nuanced intricacies encapsulated within each column. The objective is to elevate the depth and accuracy of our analyses by refining data interpretation methods.
